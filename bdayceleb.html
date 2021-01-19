@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <title>Birthday Celebration</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Satisfy', cursive;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        .main_header{
+            width: 100vw;
+            height:100vh;
+            background:hsl(0,0%,94%);
+            display: grid;
+            place-items: center;
+        }
+        .center_div{
+            min-width: 50vw;
+            height: 40vh;
+            color: #000;
+            text-shadow: 0 0 2rem rgba(0,0,0,0.3);
+            font-size: 7rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main_header">
+        <div class="center_div">
+            <p>many many happy returns of the day dear...
+                <br>
+                🎂we love you. a lot.🎂
+            </p>
+        </div>
+    </div>
+    <script src="confetti.js-master/confetti.js"></script>
+    
+    <script>
+        
+        // confetti.stop();
+        const startit = () =>{
+            setTimeout(function(){
+                confetti.start();
+
+            },1000);
+        };
+        const stopit = () =>{
+            setTimeout(function(){
+                confetti.stop();
+
+            },10000);
+        };
+        startit();
+        stopit();
+    </script>
+    
+</body>
+</html>
